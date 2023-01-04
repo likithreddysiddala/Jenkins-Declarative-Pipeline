@@ -9,7 +9,7 @@ pipeline{
     stages{
         stage("Git checkout"){
             steps{
-                git 'https://github.com/likithreddysiddala/Jenkins-Declarative-pipeline.git'
+                git 'https://github.com/likithreddysiddala/Jenkins-Declarative-Pipeline.git'
             }
         }
         stage("Maven build"){
