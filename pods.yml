@@ -9,4 +9,4 @@ spec:
     - name: javahometech
       image: likithreddysiddala/javahometech:v1
       ports:
-        - containerPort: 8080
+        - containerPort: 8081
