@@ -7,6 +7,6 @@ spec:
     app: javahometech
   ports:
   - protocol: TCP
-    port: 80
-    targetPort: 8080
+    port: 81
+    targetPort: 8081
   type: LoadBalancer   
