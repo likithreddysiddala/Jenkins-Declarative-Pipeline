@@ -18,6 +18,14 @@ pipeline{
 			
             }
         }
+	stage("Tomcat-deployment"){
+            steps{
+               sshagent(['43.200.175.67']) {
+                  sh "scp -o StrictHostKeyChecking=no target/**.war ec2-user@172.31.32.49:/opt/tomcat9/webapps"
+                }
+			
+            }
+        }
          stage("Docker Build"){
             steps{
                 sh 'docker build . -t likithreddysiddala/app:${DOCKER_TAG} '
